@@ -1,0 +1,12 @@
+- The breadth-first search is a tree traversal algorithm that follows a level-by-level search pattern, starting with the root node on top and moving to each level in search of a goal node.
+- As nodes of a tree are searched, their children are added to a queue known as the frontier. This queue follows the first-in-first-out rule known as FIFO where the first nodes added to the queue will be the first to leave and be searched.
+
+Level-By-Level Search
+- The level-by-level pattern followed by the breadth-first search can feel very approachable since it is just like searching for a specific word in a book or even this article. 
+- Every word is checked line by line with no word or line skipped. Similarly, the breadth-first search iteratively checks child nodes in the order they are placed in a queue.
+
+
+The search starts with two values, a root node for the tree and the goal value we are searching for.
+Our first search step is to add the root node to the end of our node queue. The queue represents the search’s frontier.
+While the node queue contains at least one value, we retrieve the next node from the frontier and check its value against the goal value.
+If the two values match, the current node is returned. If they don’t match, the search continues by adding the current node’s children to the frontier.
